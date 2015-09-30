@@ -1,33 +1,32 @@
-(function () {
+(function() {
 
-// function fizzBuzz (num) {
-//   var x = 1;
-//   for (x; x <= num; x++) {
-//     if ((x % 3 === 0) && (x % 5 === 0)) {
-//       console.log("fizzbuzz");
-//     } else if (x % 3 === 0) {
-//       console.log("fizz");
-//     } else if (x % 5 === 0) {
-//       console.log("buzz");
-//     } else {
-//       console.log(x);
-//     }
-//   }
-// }
+var btnFizzBuzz = document.getElementById("btn_fizzbuzz");
 
-// fizzBuzz(100);
+btnFizzBuzz.addEventListener("click", function (e) {
+  e.preventDefault();
+  var results = document.getElementById("results_fizzbuzz");
 
-function fizzBuzzPartDeux (num) {
-  var x = 1;
-  for (x; x <= num; x++) {
-    var answer = "";
-    if (x % 3 === 0) { answer += "fizz"; }
-    if (x % 5 === 0) { answer += "buzz"; }
-    console.log(answer || x);
+  var num1 = document.getElementById("number_start").value;
+  var num2 = document.getElementById("number_end").value;
+  var answer;
+  for (num1; num1 <= num2; num1++) {
+    if ((num1 % 3 === 0) && (num1 % 5 === 0)) {
+      answer = "fizzbuzz";
+    } else if (num1 % 3 === 0) {
+      answer = "fizz";
+    } else if (num1 % 5 === 0) {
+      answer = "buzz"
+    } else {
+      answer = num1;
+    }
+
+    var text = document.createTextNode(answer);
+    results.appendChild(text);
+
+
+
+
   }
-}
-
-
-
+});
 
 })();
