@@ -55,9 +55,11 @@ body {
 h1 {
   font-size: 2em;
   padding-bottom: 1em;
+  text-align: center
 }
 p {
   padding-bottom: 1em;
+  display: inline;
 }
 form {
   border: 1px solid black;
@@ -75,4 +77,8 @@ h2 {
 }
 #results_fizzbuzz {
   padding-top: 1em;
+}
+ol {
+  list-style: disc;
+  padding-left: 5%;
 }
