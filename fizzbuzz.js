@@ -1,3 +1,4 @@
+(function() {
 // object created
 var Fizzbuzz = (function() {
 
@@ -64,10 +65,14 @@ var fuzzBuzz = new Fizzbuzz();
 var btnFizzBuzz = document.getElementById("btn_fizzbuzz");
 
 //event listener that calls
-btnFizzBuzz.addEventListener("click", function(e) {
+btnFizzBuzz.addEventListener("click", fizzHandler);
+
+function fizzHandler(e) {
   e.preventDefault();
   var start = document.getElementById("number_start").value;
   var end = document.getElementById("number_end").value;
   fuzzBuzz.read(start, end);
   fuzzBuzz.write(start, end);
-});
+};
+
+})();
