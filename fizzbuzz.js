@@ -76,5 +76,4 @@ function fizzHandler(e) {
 //event listener that calls
 btnFizzBuzz.addEventListener("click", fizzHandler);
 
-
 })();
