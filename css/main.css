@@ -48,14 +48,21 @@ table {
 }
 /* -- Page Styles --*/
 body {
-  background-color: lightblue;
   padding: 5%;
   width: 90%;
-}
+  background-image:
+    radial-gradient(
+      #BBDDFF,
+      #3399CC
+    );
+  }
+
 h1 {
   font-size: 2em;
   padding-bottom: 1em;
-  text-align: center
+  text-align: center;
+  font-family: fantasy;
+  font-weight: bold;
 }
 section {
   display: inline-block;
@@ -66,19 +73,17 @@ p {
   display: inline;
 }
 form {
-  border: 1px solid blanchedalmond;
-
+  border: 1px solid #006633;
+  padding: 1em;
+  margin-bottom: 1em;
 }
 form div {
   padding: 1em;
 }
-form button {
-  padding: 1em;
-  margin: 0 0 1em 1em;
-}
 h2 {
-  font-size: 1.5em;
-  padding-top: 1em;
+  font-size: 1.25em;
+  padding: 1em;
+  font-style: italic;
 }
 #results_fizzbuzz {
   padding-top: 1em;
@@ -88,8 +93,35 @@ ol {
   padding-left: 5%;
 }
 li {
-  background-color: lightpink;
-  width: 20%;
   margin-bottom: 0.5em;
-  text-align: center;
+  margin-left: 2em;
 }
+p span {
+  font-family: fantasy;
+  font-size: 2em;
+  font-style: italic;
+}
+.p_word_choice {
+  padding: 2em;
+}
+button {
+  padding: .5em;
+  margin: 0 0 1em 1em;
+  border-top: 1px solid #006633;
+  background: #00CC66;
+  background: -webkit-linear-gradient(top, #006633, #00CC66);
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: white;
+  font-size: .8em;
+  font-family: fantasy;
+  vertical-align: middle;
+  }
+button:hover {
+  border-top-color: #28597a;
+  background: #28597a;
+  background: -webkit-linear-gradient(bottom, #006633, #00CC66);
+  color: #ccc;
+ }
+
