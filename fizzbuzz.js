@@ -1,5 +1,3 @@
-
-
 // object created
 // vars created here to be used in both _fizzbuzz and doFizzBuzz
 var Fizzbuzz = (function () {
@@ -10,7 +8,7 @@ var Fizzbuzz = (function () {
   var _fizzbuzz = function(word1, word2) {
     this.word1 = word1;
     this.word2 = word2;
-    firstWord= this.word1;
+    firstWord = this.word1;
     secondWord = this.word2;
   };
 
@@ -40,8 +38,7 @@ var Fizzbuzz = (function () {
     },
 
 // the Dom manipulation - both writes and removes text
-    write: function(start, end) {
-      var results = document.getElementById("results_fizzbuzz");
+    write: function(start, end, results) {
       var elFirstNum = document.getElementById("firstnum");
       var elLastNum = document.getElementById("secondnum");
 
