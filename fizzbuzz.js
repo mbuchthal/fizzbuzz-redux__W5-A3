@@ -1,22 +1,30 @@
-(function() {
+
 
 // object created
-var Fizzbuzz = (function() {
+// vars created here to be used in both _fizzbuzz and doFizzBuzz
+var Fizzbuzz = (function () {
+   var firstWord;
+   var secondWord;
 
-// closure
-  var _fizzbuzz = function() {
+// closure example
+  var _fizzbuzz = function(word1, word2) {
+    this.word1 = word1;
+    this.word2 = word2;
+    firstWord= this.word1;
+    secondWord = this.word2;
   };
 
-// the fizzbuzz function itself
+// the function where fizzbuzz happens
   var doFizzBuzz = function(start, end) {
     var answer = [];
+
     for (start; start <= end; start++) {
       if ((start % 3 === 0) && (start % 5 === 0)) {
-        answer.push("fizzbuzz");
+        answer.push(firstWord + secondWord);
       } else if (start % 3 === 0) {
-        answer.push("fizz");
+        answer.push(firstWord);
       } else if (start % 5 === 0) {
-        answer.push("buzz");
+        answer.push(secondWord);
       } else {
         answer.push(start);
       }
@@ -59,21 +67,4 @@ var Fizzbuzz = (function() {
   };
 
   return _fizzbuzz;
-})();
-
-// create new instance of fizzbuzz object
-var fuzzBuzz = new Fizzbuzz();
-var btnFizzBuzz = document.getElementById("btn_fizzbuzz");
-
-function fizzHandler(e) {
-  e.preventDefault();
-  var start = document.getElementById("number_start").value;
-  var end = document.getElementById("number_end").value;
-  fuzzBuzz.read(start, end);
-  fuzzBuzz.write(start, end);
-}
-
-//event listener that calls
-btnFizzBuzz.addEventListener("click", fizzHandler);
-
 })();

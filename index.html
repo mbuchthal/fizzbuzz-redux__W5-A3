@@ -10,9 +10,12 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-      <section>
+      <header>
         <h1>Welcome to the FizzBuzz Calculator!</h1>
-        <p>Please enter two numbers.  The first number will be the starting range, and the second number will be the end range.</p>
+      </header>
+      <section>
+
+        <h2>Please enter two numbers.  The first number will be the starting range, and the second number will be the end range.</h2>
           <form class="form_fizzbuzz">
               <fieldset>
                 <div>
@@ -28,9 +31,27 @@
           </form>
       </section>
       <section>
+        <h2>Choose which words you would like to use for fizzbuzz.</h2>
+           <form class="form_name_fizz">
+              <fieldset>
+                <div>
+                  <label for="textinput">Enter First Word:</label>
+                  <input id="word_one" type="text" name="textinput" placeholder="first word">
+                </div>
+                <div>
+                  <label for="textinput">Enter Second Word:</label>
+                  <input id="word_two" type="text" name="textinput" placeholder="second word">
+                </div>
+                <button id="btn_fizz_word" type="submit">Set Words</button>
+              </fieldset>
+          </form>
+      </section>
+      <section>
         <h2>Results!<span id="firstnum"></span><span id="secondnum"></span></h2>
         <p id="results_fizzbuzz"></p>
       </section>
+
       <script src="./fizzbuzz.js"></script>
+      <script src="./app.js"></script>
     </body>
 </html>

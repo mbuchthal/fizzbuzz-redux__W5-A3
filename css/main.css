@@ -57,12 +57,17 @@ h1 {
   padding-bottom: 1em;
   text-align: center
 }
+section {
+  display: inline-block;
+  width: 45%;
+}
 p {
   padding-bottom: 1em;
   display: inline;
 }
 form {
-  border: 1px solid black;
+  border: 1px solid blanchedalmond;
+
 }
 form div {
   padding: 1em;
@@ -84,7 +89,7 @@ ol {
 }
 li {
   background-color: lightpink;
-  width: 10%;
+  width: 20%;
   margin-bottom: 0.5em;
   text-align: center;
 }
