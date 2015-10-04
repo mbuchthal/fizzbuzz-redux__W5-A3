@@ -52,8 +52,8 @@
 	var fuzzBuzz = new FizzBuzz(wordOne || "fizz", wordTwo || "buzz");
 
 	// set vars for button events
-	var btnFizzBuzz = document.getElementById("btn_fizzbuzz");
-	var btnWords = document.getElementById("btn_fizz_word");
+	var btnFizzBuzz = document.getElementById("form_submit");
+	var btnWords = document.getElementById("form_words");
 
 	//event function for fizzbuzz
 	function fizzHandler(e) {
@@ -105,8 +105,8 @@
 	}
 
 	//event listeners
-	btnFizzBuzz.addEventListener("click", fizzHandler);
-	btnWords.addEventListener("click", wordHandler);
+	btnFizzBuzz.addEventListener("submit", fizzHandler);
+	btnWords.addEventListener("submit", wordHandler);
 
 
 /***/ },
