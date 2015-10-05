@@ -41,8 +41,8 @@ body {
   width: 90%;
   background-image:
     radial-gradient(
-      #BBDDFF,
-      #3399CC
+      #BDF,
+      #39C
     );
   }
 h1 {
@@ -61,7 +61,7 @@ p {
   display: inline;
 }
 form {
-  border: 1px solid #006633;
+  border: 1px solid #063;
   padding: 1em;
   margin-bottom: 1em;
 }
@@ -95,9 +95,9 @@ p span {
 button {
   padding: .5em;
   margin: 0 0 1em 1em;
-  border-top: 1px solid #006633;
-  background: #00CC66;
-  background: -webkit-linear-gradient(top, #006633, #00CC66);
+  border-top: 1px solid #063;
+  background: #0C6;
+  background: -webkit-linear-gradient(top, #063, #0C6);
   border-radius: 10px;
   box-shadow: rgba(0,0,0,1) 0 1px 0;
   text-shadow: rgba(0,0,0,.4) 0 1px 0;
@@ -109,7 +109,7 @@ button {
 button:hover {
   border-top-color: #28597a;
   background: #28597a;
-  background: -webkit-linear-gradient(bottom, #006633, #00CC66);
+  background: -webkit-linear-gradient(bottom, #063, #0C6);
   color: #ccc;
  }
 
